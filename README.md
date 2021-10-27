@@ -4,7 +4,7 @@ Trabalho da segunda certificação em Introdução à Ciência da Computação d
 Assignment of the second certification in Introduction to Computer Science of the Systems Development technical course, held in August 2019. Use only HTML and CSS. Responsive. HTML and CSS validated by the W3Schools validation service.
 
 
--- SCREENSHOTS ---
+    -- SCREENSHOTS ---
 
 ![image](https://user-images.githubusercontent.com/93265472/139110016-4e682f85-027f-4a48-8bba-7e85afcac82f.png)
 
