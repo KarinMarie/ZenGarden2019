@@ -1,0 +1,226 @@
+﻿/*
+Esqueleto do Zen Garden ICC. Preencha o cabeçalho com suas informações
+Alterações feitas por: KARIN MARIE SILVA DOS SANTOS - Nº 15.
+Turma: IN110.
+Data: 24/08/2019.
+
+
+Ao terminar, zipe este arquivo e quaisquer imagem ou webfont citada nele e envie pelo formulário que consta no enunciado.
+Não enviar o HTML junto.
+*/
+
+
+
+/*CABEÇALHO*/
+
+#principal{
+    border-width: 50px; /*definir a "grossura" da borda*/
+    border-style: solid; /*deixar a borda sólida*/
+    border-image: url("in110_15/border.png") 20% round; /*colocar imagem na borda. a porcentagem define o "corte" da imagem original*/
+}
+
+/*GERAL*/
+
+body{
+    background-image: url("in110_15/bg.png");
+}
+
+p{
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 20px;
+    font-family: sans-serif;
+}
+
+p:first-letter{
+    font-size: 30px;
+    color: #C62B02;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "French Script MT", cursive, sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: darkmagenta;
+    font-size: 50px;
+    text-shadow: 0 5px #E7E7E7;
+    font-family: "Showcard Gothic", cursive, sans-serif;
+    margin-top: 10px;
+}
+
+h2, h3{
+    color: Crimson;
+    font-family: cursive;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    margin-left: 30px;
+}
+
+#container{
+    width: 85%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rgba(226, 237, 255, .9);
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 25px;
+    box-shadow: 3px 5px 5px #E7E7E7;
+}
+
+#pcred{
+    text-align: center;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+/*FOTOS*/
+
+.foto{
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+    content: url("in110_15/poxa.jpg");
+}
+
+.foto:hover{
+    content: initial;
+    filter: grayscale(100%);
+}
+
+.foto:active{
+    content: url("in110_15/active.jpg");
+    filter: invert(100%);
+}
+
+/*LINKS*/
+
+a{
+    color: mediumslateblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+a:active{
+    font-weight: bolder;
+}
+
+/*MODIFICAÇÃO DE TEXTOS POR CSS*/
+
+#pcred{
+    visibility: hidden;
+    position: relative;
+}
+
+#pcred:after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: 'QUERO MANDAR UM BEIJO PRO MEU PAI, PRA MINHA MÃE E, PRINCIPALMENTE, PRA VOCÊ, XUXA!!! obs: quero ponto.';
+}
+
+#t3{
+    visibility: hidden;
+    position: relative;
+}
+
+#t3:after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: 'Passe o mouse por cima das imagens, depois dê um clique... Além disso, tente exibir o site em formato "mobile".';
+}
+
+/*TABELA*/
+
+table{
+	border: 3px dashed;
+	margin: 0 auto;
+    font-size: 13px;
+}
+
+th, td{
+	border: 1.5px solid;
+	text-align: center;
+}
+
+th{
+	font-size: 20px;
+	font-weight: bolder;
+    text-transform: uppercase;
+    color: darkslategrey;
+}
+
+/*LISTAS*/
+
+ul{
+    font-size: 20px;
+    margin-left: 20px;
+    color: #4d4d4d;
+}
+
+#ul1{
+    list-style-image: url("in110_15/icon.gif");
+}
+
+#ul2{
+    list-style-image: url("in110_15/icon2.gif");
+}
+
+ol{
+    list-style: upper-roman;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 768px) {
+    
+    h1{
+        font-size: 80px;
+        margin-bottom: 10px
+    }
+    
+    p{
+        font-size: 25px;
+    }
+    
+    p:first-letter{
+        font-size: 35px;
+    }
+    
+    h2{
+        font-size: 35px;
+    }
+    
+    h3{
+        font-size: 25px;
+    }
+    
+    ul{
+        margin-left: 40px;
+        font-size: 25px;
+    }
+    
+    table{
+        font-size: 25px;
+    }
+ 
+    .foto{
+        width: 600px;
+        margin: 0 auto;
+    }
+}
